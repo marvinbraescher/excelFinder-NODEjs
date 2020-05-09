@@ -1,1 +1,1 @@
-This is an example of how to find data base in a excel file on web 
+This is an example of how to find data base in an excel file on web 
