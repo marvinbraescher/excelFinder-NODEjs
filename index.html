@@ -3,13 +3,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
-        <form action="/" method="POST" enctype="multipart/form-data">
-            <label for="key">Name</label>
-            <input type="text" id="name" name="name"><br>    
-            <input id="fileSelect" type="file" name="excel" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/><br> 
-            <input type="submit" id="excel1">
+        <form class ="form-group  col-md-6" style="margin: 0 auto; width: 80%" action="/" method="POST" enctype="multipart/form-data">
+            <label for="key">Nome: </label>
+            <input class="form-control" type="text" id="name" name="name"><br>
+            <label class="col-md-12 d-flex justify-content-center" style = "background-color: #3498db; border-radius: 5px; color: #fff; cursor: pointer; padding: 6px 20px" for="fileSelect">Selecionar arquivo</label>    
+            <input style="display: none;" id="fileSelect" type="file" name="excel" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/><br> 
+            <input class="form-control" style="background-color: #3498db; border-radius: 5px; color: #fff; cursor: pointer; padding: 6px 20px"  type="submit" id="excel1">
         </form>
         
     </body>

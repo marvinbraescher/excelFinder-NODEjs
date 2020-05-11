@@ -20,33 +20,6 @@
 
     })
 }) 
-/*
-    form.on('fileBegin', function(name, file){
-        file.path = __dirname + "/" + file.name
-    })
-    form.on('file', function(name,file){
-        console.log('Uploaded file  ' + file.name)
-        var name = file.name
-        excelToJson(name)
-    })
-
-    res.sendFile(__dirname + '/index.html')
-
-
-    var excelToJson = function (name){
-    var excel = xlsx.readFile(__dirname + '/' + name)
-    var nameSheet = excel.SheetNames
-    var res = (xlsx.utils.sheet_to_json(excel.Sheets[nameSheet[0]]))
-    var data = JSON.parse(JSON.stringify(res, function(a, b) {
-        return typeof b === "string" ? b.toUpperCase() : b
-      }))
-    var result = data.filter(data =>{
-        return new RegExp('LUIZ', 'i').test(data.NOME)
-    })
-    console.log(result)
-    }
-
-*/
 
 /**
  * Trasnforma o arquivo excel em um array de objetos (JSON)
